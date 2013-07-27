@@ -32,6 +32,10 @@
             <format property="DATE" pattern="%c" />
           </tstamp>
         
+        <gitpull
+         repository="${repo.dir}" refspec="master" />
+
+          
         <gitcommit
              repository="${repo.dir.resolved}" 
              message="${version.number} ${DATE} commited by Author ${author.name} " allFiles="true" />
