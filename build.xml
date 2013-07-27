@@ -124,7 +124,10 @@
              repository="${repo.dir.resolved}" 
              message="${version.number}" allFiles="true" />
         
-         <gittag repository="${repo.dir.resolved}" name="${version.number}" />
+        <gittag 
+              repository="${repo.dir.resolved}" 
+                 name="${version.number}"
+                 annotate="true" message="Version ${version.number} tag"/>
         
         <gitpush
         repository="${repo.dir}" 
