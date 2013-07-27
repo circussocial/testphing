@@ -117,7 +117,12 @@
         <gitcommit
             repository="${repo.dir.resolved}" 
              message="${version.number}" allFiles="true" />
-   
+        
+        <gitpush
+        repository="${repo.dir.resolved}" 
+        refspec="master" quiet="false" />
+        
+        
      
       <echo msg="${version.number}" />
       <echo msg="${repo.dir}" />
