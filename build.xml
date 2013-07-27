@@ -18,9 +18,9 @@
 
     <!-- assume our current directory IS the git repo to operate on -->
     <property name="repo.dir" value="." />
+    <property name="remote.dir.resolved" value="https://github.com/circussocial/testphing.git" />
     <resolvepath propertyName="repo.dir.resolved" file="${repo.dir}" />
-     <resolvepath propertyName="remote.dir.resolved" file="https://github.com/circussocial/testphing.git" />
-
+    
 
     <!-- demonstrate task for git-describe command -->
     <target name="gitdescribe">
@@ -117,8 +117,9 @@
     <target name="build" description="Build"  >
       
      <version releasetype="Bugfix" file="version.txt" property="version.number"/>
+     
         <gitcommit
-            repository="${repo.dir.resolved}" 
+             repository="${repo.dir.resolved}" 
              message="${version.number}" allFiles="true" />
         
         
