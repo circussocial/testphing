@@ -126,10 +126,10 @@
         
         
         
-                 <gitpush
-	            repository="${remote.repo}" 
-	            destination="origin" refspec="master:master" 
-	            force="true" quiet="false" />
+        <gitpush
+        repository="${remote.repo}" 
+        destination="origin" refspec="master:foobranch"
+        force="true" quiet="false" />
         
         
      
