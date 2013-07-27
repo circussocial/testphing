@@ -120,7 +120,7 @@
         
         <gitpush
         repository="${repo.dir.resolved}" 
-        refspec="master" quiet="false" />
+         quiet="false" />
         
         
      
