@@ -6,6 +6,7 @@
  */
 
 echo "This is a test" ;
+echo "This is just a simple disconnect" ;
 
 echo phpinfo();
 
