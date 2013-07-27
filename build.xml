@@ -116,7 +116,7 @@
      <version releasetype="Major" file="version.txt" property="version.number"/>
         <gitcommit
     repository="${repo.dir.resolved}" 
-    message="Commit message" allFiles="true" />
+    message="${version.number}" allFiles="true" />
    
      
       <echo msg="${version.number}" />
