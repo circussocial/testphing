@@ -128,8 +128,8 @@
         
         <gitpush
         repository="${repo.dir}" 
-        destination="origin" refspec="master:master"
-        force="true" quiet="false" />
+        destination="origin" refspec="master"
+        quiet="false" />
         
         
      
