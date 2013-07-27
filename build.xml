@@ -17,6 +17,7 @@
     
 
     <!-- assume our current directory IS the git repo to operate on -->
+    <property name="author.name" value="Amol C" />
     <property name="repo.dir" value="." />
     <property name="remote.repo" value="git@github.com:circussocial/testphing.git" />
     
@@ -118,16 +119,20 @@
   
     <target name="build" description="Build"  >
       
-     <version releasetype="Bugfix" file="version.txt" property="version.number"/>
-     
+         <version releasetype="Bugfix" file="version.txt" property="version.number"/>
+         
+          <tstamp>
+                <format property="DATE" pattern="%c" />
+          </tstamp>
+        
         <gitcommit
              repository="${repo.dir.resolved}" 
-             message="${version.number}" allFiles="true" />
+             message="${version.number} ${DATE} commited by Author ${author.name} " allFiles="true" />
         
         <gittag 
               repository="${repo.dir.resolved}" 
                  name="${version.number}"
-                 annotate="true" message="Version ${version.number} tag"/>
+                 annotate="true" message="Version ${version.number} ${DATE}"/>
         
         <gitpush
         repository="${repo.dir}" 
