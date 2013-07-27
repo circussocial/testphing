@@ -19,6 +19,8 @@
     <!-- assume our current directory IS the git repo to operate on -->
     <property name="repo.dir" value="." />
     <resolvepath propertyName="repo.dir.resolved" file="${repo.dir}" />
+     <resolvepath propertyName="remote.dir.resolved" file="https://github.com/circussocial/testphing.git" />
+
 
     <!-- demonstrate task for git-describe command -->
     <target name="gitdescribe">
@@ -119,9 +121,11 @@
             repository="${repo.dir.resolved}" 
              message="${version.number}" allFiles="true" />
         
+        
+        
         <gitpush
-        repository="${repo.dir.resolved}" 
-        refspec="master" quiet="false" />
+        repository="${remote.dir.resolved}" 
+        refspec="master:master" quiet="false" />
         
         
      
