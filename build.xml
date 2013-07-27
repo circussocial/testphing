@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<project name="MyProject" default="build">
+<project name="MyProject" default="commit">
 
   <!-- ============================================  -->
   <!-- (GIT Classes )   Target: build                      -->
@@ -53,6 +53,25 @@
         <echo msg="${version.number} Successful" />
        
     </target>
+    
+    
+    
+        <target name="commit" description="commit"  >
+      
+         <version releasetype="Bugfix" file="version.txt" property="version.number"/>
+         
+          <tstamp>
+            <format property="DATE" pattern="%c" />
+          </tstamp>
+         
+        <gitcommit
+             repository="${repo.dir.resolved}" 
+             message="${version.number} ${DATE} commited by Author ${author.name} " allFiles="true" />
+        
+        
+        <echo msg="${version.number} Successful" />
+       
+        </target>
 
   
 
