@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<project name="MyProject" default="commit">
+<project name="MyProject" default="build">
 
   <!-- ============================================  -->
   <!-- (GIT Classes )   Target: build                      -->
