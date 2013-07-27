@@ -18,7 +18,7 @@
 
     <!-- assume our current directory IS the git repo to operate on -->
     <property name="repo.dir" value="." />
-    <property name="remote.repo" value="https://github.com/circussocial/testphing.git" />
+    <property name="remote.repo" value="git@github.com:circussocial/testphing.git" />
     
     
     <resolvepath propertyName="repo.dir.resolved" file="${repo.dir}" />
