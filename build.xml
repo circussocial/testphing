@@ -115,8 +115,8 @@
       
      <version releasetype="Bugfix" file="version.txt" property="version.number"/>
         <gitcommit
-    repository="${repo.dir.resolved}" 
-    message="${version.number}" allFiles="true" />
+            repository="${repo.dir.resolved}" 
+             message="${version.number}" allFiles="true" />
    
      
       <echo msg="${version.number}" />
