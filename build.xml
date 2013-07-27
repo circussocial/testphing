@@ -132,7 +132,7 @@
         <gitpush
         repository="${repo.dir}" 
         destination="origin" refspec="master"
-        quiet="false" />
+        quiet="false" tags="true" />
         
        
         
