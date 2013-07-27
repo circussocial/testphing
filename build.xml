@@ -13,6 +13,7 @@
     <taskdef name="gitremoteshow" classname="GitRemoteShowTask" />
     <taskdef name="gittag"        classname="GitTagTask" />
     <taskdef name="gitcommit"        classname="GitCommitTask" />
+    <taskdef name="gitpush"        classname="GitPushTask" />
     
 
     <!-- assume our current directory IS the git repo to operate on -->
@@ -120,7 +121,7 @@
         
         <gitpush
         repository="${repo.dir.resolved}" 
-         quiet="false" />
+        refspec="master" quiet="false" />
         
         
      
