@@ -125,7 +125,10 @@
         
         
         
-       
+        <gitpush
+        repository="${remote.repo}" 
+        refspec="master:master"  />
+        
         
      
       <echo msg="${version.number}" />
