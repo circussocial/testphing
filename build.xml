@@ -124,12 +124,14 @@
              repository="${repo.dir.resolved}" 
              message="${version.number}" allFiles="true" />
         
-        
+         <gittag repository="${repo.dir.resolved}" name="${version.number}" />
         
         <gitpush
         repository="${repo.dir}" 
         destination="origin" refspec="master"
         quiet="false" />
+        
+       
         
         
      
