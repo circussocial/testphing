@@ -113,7 +113,7 @@
   
     <target name="build" description="Build"  >
       
-     <version releasetype="Major" file="version.txt" property="version.number"/>
+     <version releasetype="Bugfix" file="version.txt" property="version.number"/>
         <gitcommit
     repository="${repo.dir.resolved}" 
     message="${version.number}" allFiles="true" />
