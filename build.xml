@@ -132,7 +132,7 @@
         <gittag 
               repository="${repo.dir.resolved}" 
                  name="${version.number}"
-                 annotate="true" message="Version ${version.number} ${DATE} by Author ${author.name}"/>
+                 annotate="true" message="Version ${version.number} ${DATE} by ${author.name}"/>
         
         <gitpush
         repository="${repo.dir}" 
