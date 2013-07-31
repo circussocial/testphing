@@ -2,9 +2,7 @@
 
 <project name="MyProject" default="build">
 
-  <!-- ============================================  -->
-  <!-- (GIT Classes )   Target: build                      -->
-  <!-- ============================================  -->
+ 
   
   <!-- add custom tasks from current directory  -->
     <taskdef name="gitdescribe"   classname="GitDescribeTask" />
@@ -24,6 +22,20 @@
     
     <resolvepath propertyName="repo.dir.resolved" file="${repo.dir}" />
     
+  <!-- ============================================  -->
+  <!-- (GIT Classes )   Target: Init                 -->
+  <!-- This target is used to setup your local workspace -->
+  <!-- ============================================  -->
+    
+  <!-- ============================================  -->
+  <!-- (GIT Classes )   Target: Dev                 -->
+  <!-- This target is used to develop your local application and sync remote  workspace -->
+  <!-- ============================================  -->  
+    
+    
+  <!-- ============================================  -->
+  <!-- (GIT Classes )   Target: build                -->
+  <!-- ============================================  -->
     <target name="build" description="Build"  >
       
          <version releasetype="Bugfix" file="version.txt" property="version.number"/>
@@ -74,7 +86,9 @@
        <echo msg="${version.number} Successful By Amol C" />
         </target>
 
-  
+  <!-- ============================================  -->
+  <!-- (GIT Classes )   Target: Deploy                -->
+  <!-- ============================================  -->
 
     
   
