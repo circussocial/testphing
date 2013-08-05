@@ -7,6 +7,7 @@
 
 echo "This is a test" ;
 echo "This is just a simple disconnect" ;
+echo "Shahid joining the phing team" ;
 echo "This is just a simple disconnect part 2 " ;
 
 echo phpinfo();
