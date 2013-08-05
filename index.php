@@ -10,6 +10,8 @@ echo "This is just a simple disconnect" ;
 echo "Shahid joining the phing team" ;
 echo "This is just a simple disconnect part 2 " ;
 
+echo "this is shahid work";
+
 echo phpinfo();
 
 ?>
