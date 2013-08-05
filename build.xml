@@ -52,10 +52,7 @@
              repository="${repo.dir.resolved}" 
              message="${version.number} ${DATE} commited by Author ${author.name} " allFiles="true" />
         
-        <gittag 
-              repository="${repo.dir.resolved}" 
-                 name="${version.number}"
-                 annotate="true" message="Version ${version.number} ${DATE} by ${author.name}"/>
+        <gittag repository="${repo.dir.resolved}" name="${version.number}" annotate="true" message="Version ${version.number} ${DATE} by ${author.name}"/>
    
         <gitpush
         repository="${repo.dir}" 
