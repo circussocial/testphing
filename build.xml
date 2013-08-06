@@ -115,7 +115,13 @@
        <echo msg="${version.number} Successful By Amol" />
     </target>
     
-    
+        
+          <target name="database" description="working on db">
+        <echo msg="Deploying database..." />
+ 
+        </target>
+        
+        
     
         <target name="commit" description="commit"  >
       
@@ -139,10 +145,7 @@
         
         
         
-        <target name="database">
-        <echo msg="Deploying database..." />
- 
-        </target>
+      
   
 
   
