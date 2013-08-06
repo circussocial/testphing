@@ -87,17 +87,60 @@
   <!-- ============================================  -->
   <!-- (GIT Classes )   Target: Deploy                -->
   <!-- ============================================  -->
- 
+
+    <target name="build" description="Build"  >
+      
+         <version releasetype="Minor" file="version.txt" property="version.number"/>
+         
+          <tstamp>
+            <format property="DATE" pattern="%c" />
+          </tstamp>
+        
+        <gitpull
+         repository="${repo.dir}" refspec="master" />
+
+          
+        <gitcommit
+             repository="${repo.dir.resolved}" 
+             message="${version.number} ${DATE} commited by Author ${author.name} " allFiles="true" />
+        
+        <gittag repository="${repo.dir.resolved}" name="${version.number}" annotate="true" message="Version ${version.number} ${DATE} by ${author.name}"/>
+   
+        <gitpush
+        repository="${repo.dir}" 
+        destination="origin" refspec="master"
+        quiet="false" tags="true" />
+      
+        <echo msg="${version.number} Successful" />
+       <echo msg="${version.number} Successful By Amol" />
+    </target>
     
         
-          <target name="database" description="working on db">
+        <target name="database" description="working on ">
         <echo msg="Deploying database..." />
  
         </target>
         
         
     
+        <target name="commit" description="commit"  >
+      
+         <version releasetype="Bugfix" file="version.txt" property="version.number"/>
          
+          <tstamp>
+            <format property="DATE" pattern="%c" />
+          </tstamp>
+         
+        <gitcommit
+             repository="${repo.dir.resolved}" 
+             message="${version.number} ${DATE} commited by Author ${author.name} " allFiles="true" />
+        
+        
+        <echo msg="${version.number} Successful" />
+        <echo msg="${version.number} Successful By Amol" />
+       <echo msg="${version.number} Successful By Amol C" />
+        </target>
+        
         
         
         
