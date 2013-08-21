@@ -15,7 +15,7 @@
     
 
     <!-- assume our current directory IS the git repo to operate on -->
-    <property name="author.name" value="Amol C" />
+    <property name="author.name" value="Owen S" />
     <property name="repo.dir" value="." />
     <property name="remote.repo" value="git@github.com:circussocial/testphing.git" />
     
@@ -60,7 +60,7 @@
         quiet="false" tags="true" />
       
         <echo msg="${version.number} Successful" />
-       <echo msg="${version.number} Successful By Amol" />
+       <echo msg="${version.number} Successful By Owen" />
     </target>
     
     
@@ -79,8 +79,8 @@
         
         
         <echo msg="${version.number} Successful" />
-        <echo msg="${version.number} Successful By Amol" />
-       <echo msg="${version.number} Successful By Amol C" />
+        <echo msg="${version.number} Successful By Owen" />
+       <echo msg="${version.number} Successful By Owen S" />
         </target>
         
 
